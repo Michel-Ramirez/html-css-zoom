@@ -13,9 +13,15 @@ header, footer{
     background-color: black;
 }
 
-main{
-    overflow: scroll;
+footer{
+    background-color: #222222;
 }
+
+main{
+    overflow: auto;
+    background-color: black;
+}
+
 
 /* !UTILITY */
 
@@ -35,14 +41,19 @@ main{
 
 /* HEADER */
 
-.view, .close{
+.btn-view-mode, .btn-close{
     color: white;
     padding: 5px;
     background-color: gray;
     border-radius: 5px;
     border: none;
     margin-top: 10px;
+    cursor: pointer;
     
+}
+
+.btn-view-mode:active, .btn-close:active{
+    transform: scale(1.04);
 }
 
 .utility-header{
@@ -50,7 +61,7 @@ main{
     padding-inline-end: 20px;
 }
 
-.view{
+.btn-view-mode{
     margin-right: 5px;
 
 }
@@ -83,4 +94,45 @@ main{
     position: absolute;
     left: 0;
     bottom: 0;
+}
+
+/* FOOTER */
+
+.a-v-user-commands > *, .room-user-commands > *, .btn-ending-meeting > * {
+    display: inline-block;
+    padding: 10px;
+}
+
+
+.container-user-commands{
+    height: 100%;
+    flex-basis: calc(100% / 3);
+    color: lightgray;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a-v-user-commands, .room-user-commands{
+   text-align: center;
+   align-items: center;
+}
+
+.action-icon i{
+    font-size: 2rem;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.btn-ending-meeting{
+    background-color: #4A4A4A;
+    color: red;
+    height: 100%;
+    border: none;
+    padding: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.more{
+    cursor: pointer;
 }

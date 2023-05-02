@@ -11,12 +11,12 @@
 <body>
     <header>    
         <div class="utility-header d-flex">
-            <button class="view">
+            <button class="btn-view-mode" type="button">
                 <i class="fa-solid fa-table-cells"></i>
                 <span>Speaker View</span> 
             </button>
-            <button class="close">
-                <i class="fa-solid fa-rectangle-xmark"></i>
+            <button class="btn-close" type="button">
+                <i class="fa-solid fa-maximize"></i>
             </button>
         </div>
     </header>
@@ -271,7 +271,66 @@
         </div>
     </main>
     <footer>
-
+        <div class="container-user-commands d-flex">
+            <div class="a-v-user-commands d-flex">
+                <div class="audio">
+                    <div class="action-icon">
+                        <i class="fa-solid fa-microphone"></i>
+                        <div>Mute</div>
+                    </div>    
+                </div>
+                <div class="more">
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="video">
+                    <div class="action-icon">
+                        <i class="fa-solid fa-video"></i>
+                        <div>Stop Video</div>
+                    </div>
+                </div>
+                <div class="more">
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+            </div>
+            <div class="room-user-commands d-flex">
+                <div class="action-icon">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <div>Invite</div>
+                </div>
+                <div class="action-icon">
+                    <i class="fa-solid fa-user-group"></i>
+                    <div>Manage Paticipants</div>
+                </div>
+                <div class="action-icon">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <div>polling</div>
+                </div>
+                <div class="action-icon">
+                    <i class="fa-solid fa-share-from-square"></i>
+                    <div>Share Screen</div>
+                </div>
+                <div class="more">
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="action-icon">
+                    <i class="fa-solid fa-comment"></i>
+                    <div>Chat</div>
+                </div>
+                <div class="action-icon">
+                    <i class="fa-solid fa-record-vinyl"></i>
+                    <div>Record</div>
+                </div>
+                <div class="action-icon">
+                    <i class="fa-solid fa-table-cells-large"></i>
+                    <div>Breackout Rooms</div>
+                </div>
+                <div class="action-icon">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <div>More</div>
+                </div>
+            </div>
+            <button type="button" class="btn-ending-meeting">End Meeting</button>
+        </div>
     </footer>
 </body>
 </html>
