@@ -22,6 +22,9 @@ main{
     background-color: black;
 }
 
+body{
+    font-family: sans-serif;
+}
 
 /* !UTILITY */
 
