@@ -7,10 +7,14 @@
 
 /* !GENERICS */
 
-header{
+header, footer{
     height: 80px;
     width: auto;
     background-color: black;
+}
+
+main{
+    overflow: scroll;
 }
 
 /* !UTILITY */
@@ -25,7 +29,7 @@ header{
 }
 
 .vh-100{
-    height: calc(100vh - 80px)
+    height: calc(100vh - 160px)
 }
 
 
@@ -49,4 +53,34 @@ header{
 .view{
     margin-right: 5px;
 
+}
+
+/* MAIN */
+
+.row{
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.user{
+    flex-basis: calc(100% / 7 - 10px);
+    position: relative;
+    margin-bottom: 10px;
+
+}
+
+.user img{
+    display: block;
+    width: 100%;
+}
+
+.user-action{
+    background-color: rgba(78, 77, 77, 0.63);
+    padding: 3px;
+    color: white;
+    font-size: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
