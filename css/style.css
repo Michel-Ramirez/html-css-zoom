@@ -1,6 +1,52 @@
-/* RESET */
+/* !RESET */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* !GENERICS */
+
+header{
+    height: 80px;
+    width: auto;
+    background-color: black;
+}
+
+/* !UTILITY */
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.vh-100{
+    height: calc(100vh - 80px)
+}
+
+
+/* HEADER */
+
+.view, .close{
+    color: white;
+    padding: 5px;
+    background-color: gray;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    
+}
+
+.utility-header{
+    justify-content:flex-end;
+    padding-inline-end: 20px;
+}
+
+.view{
+    margin-right: 5px;
+
 }
