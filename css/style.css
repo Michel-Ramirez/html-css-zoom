@@ -75,18 +75,19 @@ body{
     width: 100%;
     flex-wrap: wrap;
     gap: 5px;
+    justify-content: center;
+    align-content: flex-start;
 }
 
 .user{
-    flex-basis: calc(100% / 7 - 10px);
+    flex: 0 0 230px;
     position: relative;
     margin-bottom: 10px;
-
 }
 
 .user img{
     display: block;
-    width: 100%;
+    max-width: 100%;
 }
 
 .user-action{
@@ -110,7 +111,7 @@ body{
 .container-user-commands{
     height: 100%;
     flex-basis: calc(100% / 3);
-    color: lightgray;
+    color: white;
     justify-content: space-between;
     align-items: center;
 }
@@ -138,4 +139,8 @@ body{
 
 .more{
     cursor: pointer;
+}
+
+.action-icon:hover, .more:hover, .btn-ending-meeting:hover{
+    background-color: rgba(211, 211, 211, 0.366);
 }
